@@ -1,0 +1,95 @@
+@import '../../css/style.scss';
+
+
+@media (max-width: 767px) {
+    .header {
+        background-color: var(--gray-e0e3e8);
+        .visible-lg {
+            display: var(--unnamed-display-none) !important;
+        }
+
+        .visible-xs {
+            display: var(--unnamed-display-flex) !important;
+        }
+
+        .header-menus {
+            align-items: var(--unnamed-align-item-center);
+            padding: var(--unnamed-padding-0) !important;
+        }
+    }
+}
+
+.header {
+    .header-menus {
+        padding: var(--unnamed-padding-28) var(--unnamed-padding-0);
+
+        .cart-login-menu {
+            display: var(--unnamed-display-flex) !important;
+            justify-content: var(--unnamed-justify-content-flex-end);
+
+            div {
+                margin-right: var(--unnamed-margin-24);
+            }
+        }
+    }
+    .header-submenu {
+        margin: var(--unnamed-margin-0) var(--unnamed-margin-auto);
+        float: none !important;
+    }
+    
+    .text-align-center {
+        @media (min-width: 768px) {
+            text-align: var(--unnamed-text-align-center);    
+        }        
+    }
+    
+    .text-align-right {
+        @media (min-width: 768px) {
+            text-align: var(--unnamed-text-align-right);
+        }
+    }
+
+
+    .visible-xs {
+        display: var(--unnamed-display-none);
+    }
+
+    .visible-lg {
+        display: var(--unnamed-display-block);
+    }
+}
+
+.mobile-menus-container {
+    background-color: var(--alabasterr-f7f7f7);
+    padding: var(--unnamed-padding-50);
+    visibility: var(--unnamed-visibility-hidden);
+    position: var(--unnamed-position-fixed);
+    z-index: 10;
+    top: var(--unnamed-top-0);
+    height: var(--unnamed-height-100);
+    width: var(--unnamed-width-100);
+
+    .menu-header-section {
+        display: var(--unnamed-display-flex);
+        justify-content: var(--unnamed-justify-content-space-between);
+        align-items: var(--unnamed-align-item-center);
+    }
+
+    .sub-menu-list {
+        padding: var(--unnamed-padding-44) var(--unnamed-padding-0);
+
+        div {
+            padding: var(--unnamed-padding-20) var(--unnamed-padding-0);
+
+            &.headline-5-18pt {
+                font-size: var(--unnamed-font-size-24);
+            }
+        }
+    }
+
+    .menu-list {
+        div {
+            padding: var(--unnamed-padding-16) var(--unnamed-padding-0);
+        }
+    }
+}

@@ -1,0 +1,51 @@
+@import '../../css/style.scss';
+
+
+.teaser-container {
+    background-color: var(--athens-gray-eef2f4);
+
+    &.natural-ingredients-container {
+        .details-section {
+            height: var(--unnamed-height-512);
+            background-color: var(--siler-rust-c6b9b6) !important;
+        }
+
+        .image-section {
+            img {
+                max-height: var(--unnamed-height-512);
+            }
+        }
+    }
+
+    .details-section {
+        height: var(--unnamed-height-576);
+        display: var(--unnamed-display-flex);
+        background-color: var(--como-547665);
+
+        .text-container {
+            margin: var(--unnamed-margin-auto);
+            width: var(--unnamed-width-68);
+
+            .headline-4-28pt,
+            .body-3-12pt {
+                color: var(--white-ffffff);
+                margin-bottom: var(--unnamed-margin-16);
+            }
+
+            button {
+                color: var(--white-ffffff);
+                border-color: var(--white-ffffff);
+
+                &:hover {
+                    color: var(--rangitoto-2e2e22);
+                    border-color: var(--oxford-blue-354e57);
+                }
+            }
+        }
+    }
+    
+    .image-section {
+        max-height: var(--unnamed-height-576);;
+        overflow: hidden;
+    }
+}

@@ -1,0 +1,85 @@
+@import '../../css/style.scss';
+
+@media (max-width: 768px) {
+    .news-letter-container {
+        padding: var(--unnamed-padding-28) !important;
+
+        .news-letter-section {
+            display: var(--unnamed-display-block) !important;
+
+            div:nth-child(1) {
+                display: var(--unnamed-display-block) !important;
+
+                .headline-4-28pt {
+                    border-bottom: var(--unnamed-border-1-solid) var(--gray-b9c1c4);
+                    margin-bottom: var(--unnamed-margin-20);
+                    padding-bottom: var(--unnamed-padding-32);
+                }
+    
+                .body-2-14pt {
+                    padding-bottom: var(--unnamed-padding-32);
+
+                    div {
+                        width: var(--unnamed-width-80);
+                    }
+                }
+            }
+        }
+
+        .form-input-section {
+            display: var(--unnamed-display-flex) !important;
+        }
+    }    
+}
+
+
+@media (min-width: 768px) {
+    .news-letter-container {
+        padding: var(--unnamed-padding-28) !important;
+
+        .news-letter-section {
+            display: var(--unnamed-display-flex) !important;
+            align-items: var(--unnamed-align-item-center);
+
+            div:nth-child(1) {
+                display: var(--unnamed-display-flex) !important;
+                align-items: var(--unnamed-align-item-center);
+
+                .headline-4-28pt {
+                    border-right: var(--unnamed-border-1-solid) var(--gray-b9c1c4);
+                    margin-right: var(--unnamed-margin-20);
+                    padding-right: var(--unnamed-padding-20);
+                }
+    
+                .body-2-14pt {
+                    div {
+                        width: var(--unnamed-width-80);
+                    }
+                }
+            }
+        }
+    }    
+}
+
+.news-letter-container {
+    padding: var(--unnamed-padding-36) var(--unnamed-padding-180);
+    border-top: var(--unnamed-border-1-solid) var(--como-547665);
+
+    .form-input-section {
+        .form-input {
+            border-radius: var(--unnamed-border-radius-0);
+
+            &::placeholder {
+                font-size: var(--unnamed-font-size-12);
+            }
+        }
+
+        .btn-subscribe {
+            padding: var(--unnamed-padding-8) var(--unnamed-padding-16);
+            margin-left: calc(var(--unnamed-margin-6) * -1);
+            border: var(--unnamed-border-1-solid) var(--cape-palliser-a67744);
+            color: var(--white-ffffff);
+            background-color: var(--cape-palliser-a67744);
+        }
+    }
+}

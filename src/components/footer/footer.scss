@@ -1,0 +1,102 @@
+@import '../../css/style.scss';
+
+
+@media (max-width: 767px) {
+    .footer-container {
+        padding: var(--unnamed-padding-88) var(--unnamed-padding-28) !important;
+    }
+
+    .visible-xs {
+        display: var(--unnamed-display-block) !important;
+    }
+
+    .visible-lg {
+        display: var(--unnamed-display-none) !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .footer-container {
+        padding: var(--unnamed-padding-88) var(--unnamed-padding-28) !important;
+    } 
+}
+
+
+.footer-container {
+    font-family: var(--unnamed-font-family-proxima-nova);
+    background-color: var(--oxford-blue-354e57);
+    color: var(--white-ffffff);
+    padding: var(--unnamed-padding-116);
+
+    .visible-xs {
+        display: var(--unnamed-display-none);
+    }
+
+    .visible-lg {
+        display: var(--unnamed-display-block);
+    }
+
+    .subscribe-section {
+        padding-bottom: var(--unnamed-padding-88);
+        border-bottom: var(--unnamed-border-1-solid) var(--white-ffffff);
+
+        ul {
+            padding-left: var(--unnamed-padding-0);
+            li {
+                display: var(--unnamed-display-block);
+                font-size: var(--unnamed-font-size-14);
+                padding-bottom: var(--unnamed-padding-8);
+            }
+        }
+    }
+
+    .social-contact-section {
+        padding-top: var(--unnamed-padding-44);
+
+        .section-heading {
+            padding-bottom: var(--unnamed-padding-16);
+        }
+
+        a {
+            color: var(--white-ffffff);
+        }
+
+
+        @media (max-width: 767px) {
+            div:nth-child(2) {
+                div.aem-GridColumn--phone--12:nth-child(1) {
+                    margin-bottom: var(--unnamed-margin-30) !important;
+                }
+            }
+        }
+    }
+
+
+    .headline-—-48pt,
+    .body-1-—-14pt {
+        color: var(--white-ffffff);
+    }
+    
+    
+    .form-input-section {
+        padding-top: var(--unnamed-padding-44);
+        .form-input {
+            color: var(--white-ffffff);
+            background-color: var(--oxfort-blue-354e57);
+            border-radius: var(--unnamed-border-radius-0);
+
+            &::placeholder {
+                color: var(--white-ffffff);
+                font-size: var(--unnamed-font-size-12);
+            }
+        }
+
+        .btn-subscribe {
+            padding: var(--unnamed-padding-8) var(--unnamed-padding-16);
+            margin-left: calc(var(--unnamed-margin-6) * -1);
+            background-color: var(--oxfort-blue-354e57);
+            color: var(--white-ffffff);
+            border: var(--unnamed-border-1-solid) var(--white-ffffff);
+        }
+    }
+}

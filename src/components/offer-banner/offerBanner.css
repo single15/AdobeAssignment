@@ -1,0 +1,12 @@
+.offer-banner-container {
+  background: var(--cape-palliser-a67744) 0% 0% no-repeat padding-box;
+}
+
+.offer-banner {
+  font: var(--unnamed-font-style-normal) normal medium 16px/20px var(--unnamed-font-family-proxima-nova);
+  font-family: var(--unnamed-font-family-proxima-nova);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--beige-f7f5e6);
+  text-align: var(--unnamed-text-align-center);
+  padding: var(--unnamed-padding-8) var(--unnamed-padding-0);
+}
