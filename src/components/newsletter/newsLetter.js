@@ -14,7 +14,7 @@ newsLetterTemplate.innerHTML = `
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12">
                 <div class="form-input-section">
-                    <input class="form-input" type="text" placeholder="Your email...." />
+                    <input class="form-input" type="text" />
                     <button class="btn-subscribe">Subscribe</button>
                 </div>
             </div>

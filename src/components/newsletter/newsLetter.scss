@@ -28,6 +28,15 @@
 
         .form-input-section {
             display: var(--unnamed-display-flex) !important;
+
+            .form-input {
+                width: calc(100% - 150px);
+            }
+
+            .btn-subscribe {
+                margin-left: var(--unnamed-margin-0) !important;
+                float: left;
+            }
         }
     }    
 }
@@ -68,6 +77,8 @@
     .form-input-section {
         .form-input {
             border-radius: var(--unnamed-border-radius-0);
+            outline: none;
+            border-color: var(--cape-palliser-a67744);
 
             &::placeholder {
                 font-size: var(--unnamed-font-size-12);

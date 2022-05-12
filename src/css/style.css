@@ -5354,12 +5354,11 @@ body {
 
 @media (min-width: 768px) {
   .header-hero-banner-section {
-    height: 94vh;
-    background-image: url("../assets/img/updated_Header@2x.png");
+    background-image: url("../assets/img/hero-banner-background.png");
     background-color: var(--athens-gray-eef2f4);
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: inherit;
+    background-size: 78% 108%;
   }
 }
 

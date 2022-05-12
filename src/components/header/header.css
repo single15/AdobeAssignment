@@ -5187,7 +5187,6 @@
   --unnamed-position-absolute: absolute;
   --unnamed-border-1-solid: 1px solid;
   --unnamed-border-radius-0: 0;
-  --unnamed-z-index-10: 10;
   --unnamed-top-0: 0;
   --unnamed-top-14: 14%;
   --unnamed-top-16-px: 16px;
@@ -5225,10 +5224,7 @@
   --unnamed-width-fit-content: fit-content;
   --unnamed-background-position-x-76: 76%;
   --unnamed-background-repeat-no-repeat: no-repeat;
-  --unnamed-background-size-cover: cover
-	
-	
-;
+  --unnamed-background-size-cover: cover;
 }
 
 .headline-—-48pt {
@@ -5359,7 +5355,7 @@ body {
 @media (min-width: 768px) {
   .header-hero-banner-section {
     height: 94vh;
-    background-image: url("../assets/img/updated_Header@2x.png");
+    background-image: url("../assets/img/hero-banner-background.png");
     background-color: var(--athens-gray-eef2f4);
     background-position: center;
     background-repeat: no-repeat;

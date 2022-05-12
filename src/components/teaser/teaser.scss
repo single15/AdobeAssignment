@@ -8,6 +8,10 @@
         .details-section {
             height: var(--unnamed-height-512);
             background-color: var(--siler-rust-c6b9b6) !important;
+
+            @media (max-width: 767px) {
+                margin-top: calc(var(--unnamed-margin-6)*-1);
+            }
         }
 
         .image-section {

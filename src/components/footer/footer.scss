@@ -4,6 +4,11 @@
 @media (max-width: 767px) {
     .footer-container {
         padding: var(--unnamed-padding-88) var(--unnamed-padding-28) !important;
+
+
+        .form-input {
+            width: calc(100% - 150px);
+        }
     }
 
     .visible-xs {

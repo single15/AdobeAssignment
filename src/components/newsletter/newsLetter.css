@@ -5170,7 +5170,6 @@
   --unnamed-margin-48: 48px;
   --unnamed-margin-72: 72px;
   --unnamed-margin-auto: auto;
-  --unnamed-float-none: none;
   --unnamed-visibility-hidden: hidden;
   --unnamed-visibility-visible: visible;
   --unnamed-text-align-center: center;
@@ -5188,7 +5187,6 @@
   --unnamed-position-absolute: absolute;
   --unnamed-border-1-solid: 1px solid;
   --unnamed-border-radius-0: 0;
-  --unnamed-z-index-10: 10;
   --unnamed-top-0: 0;
   --unnamed-top-14: 14%;
   --unnamed-top-16-px: 16px;
@@ -5214,19 +5212,19 @@
   --unnamed-height-300: 300px;
   --unnamed-height-436: 436px;
   --unnamed-height-455: 455px;
+  --unnamed-height-512: 512px;
+  --unnamed-height-576: 576px;
   --unnamed-width-100: 100vw;
   --unnamed-width-60: 60%;
   --unnamed-width-65: 65%;
+  --unnamed-width-68: 68%;
   --unnamed-width-80: 80%;
   --unnamed-width-88: 88%;
   --unnamed-width-100-per: 100%;
   --unnamed-width-fit-content: fit-content;
   --unnamed-background-position-x-76: 76%;
   --unnamed-background-repeat-no-repeat: no-repeat;
-  --unnamed-background-size-cover: cover
-	
-	
-;
+  --unnamed-background-size-cover: cover;
 }
 
 .headline-—-48pt {
@@ -5356,12 +5354,11 @@ body {
 
 @media (min-width: 768px) {
   .header-hero-banner-section {
-    height: 94vh;
-    background-image: url("../assets/img/updated_Header@2x.png");
+    background-image: url("../assets/img/hero-banner-background.png");
     background-color: var(--athens-gray-eef2f4);
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: inherit;
+    background-size: 78% 108%;
   }
 }
 
@@ -5501,6 +5498,13 @@ body {
   .news-letter-container .form-input-section {
     display: var(--unnamed-display-flex) !important;
   }
+  .news-letter-container .form-input-section .form-input {
+    width: calc(100% - 150px);
+  }
+  .news-letter-container .form-input-section .btn-subscribe {
+    margin-left: var(--unnamed-margin-0) !important;
+    float: left;
+  }
 }
 
 @media (min-width: 768px) {
@@ -5536,6 +5540,8 @@ body {
 
 .news-letter-container .form-input-section .form-input {
   border-radius: var(--unnamed-border-radius-0);
+  outline: none;
+  border-color: var(--cape-palliser-a67744);
 }
 
 .news-letter-container .form-input-section .form-input::-webkit-input-placeholder {
