@@ -314,6 +314,7 @@ body {
     font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-17) var(--unnamed-font-family-proxima-nova);
     padding: var(--unnamed-padding-12)  var(--unnamed-padding-40);
     letter-spacing: var(--unnamed-character-spacing-0);
+    cursor: pointer;
 
     &.btn-default {
         background-color: transparent;
@@ -389,4 +390,17 @@ body {
         color: var(--oxford-blue-354e57);
         opacity: 1;
     }
+}
+
+.navigator-link {
+    text-align: center;
+    padding: var(--unnamed-padding-8) var(--unnamed-padding-0);
+    &:hover {
+        background: var(--gray-e0e3e8);
+        cursor: pointer;
+    }
+}
+
+.pointer-cursor {
+    cursor: pointer;
 }

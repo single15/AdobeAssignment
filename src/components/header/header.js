@@ -6,8 +6,8 @@ headerTemplate.innerHTML = `
     <header class="header body-1-—-14pt page-container">
         <div class="aem-Grid aem-Grid--12 header-menus visible-lg">
             <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--5 aem-Grid aem-Grid--12 body-3-12pt">
-                <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--3">ABOUT</div>
-                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--3">CONSULTATION</div>
+                <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--3 navigator-link">ABOUT</div>
+                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--3 navigator-link">CONSULTATION</div>
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--2 headline-3-32pt text-align-center">
                 sooth
@@ -18,10 +18,10 @@ headerTemplate.innerHTML = `
                         <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/>
                     </svg>
                 </div>
-                <div class="cart-section">
+                <div class="pointer-cursor">
                     CART
                 </div>
-                <div class="login-section">
+                <div class="pointer-cursor">
                     LOGIN
                 </div>
             </div>
@@ -46,11 +46,11 @@ headerTemplate.innerHTML = `
 
         <div class="aem-Grid aem-Grid--12 visible-lg">
             <div class="header-submenu aem-Grid aem-Grid--10 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--10">
-                <div class="aem-GridColumn aem-GridColumn--default--2 text-align-center">Acne</div>
-                <div class="aem-GridColumn aem-GridColumn--default--2 text-align-center">Sun</div>
-                <div class="aem-GridColumn aem-GridColumn--default--2 text-align-center">Ezcema</div>
-                <div class="aem-GridColumn aem-GridColumn--default--2 text-align-center">Psoriasis</div>
-                <div class="aem-GridColumn aem-GridColumn--default--2 text-align-center">Vitiligio</div>
+                <div id="acne" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Acne</div>
+                <div id="sun" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Sun</div>
+                <div id="ezcema" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Ezcema</div>
+                <div id="psoriasis" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Psoriasis</div>
+                <div id="vitiligio" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Vitiligio</div>
             </div>
         </div>
     </div>
@@ -84,12 +84,19 @@ headerTemplate.innerHTML = `
 class Header extends HTMLElement {
     constructor() {
         super();
+        this.selectedItem = '';
         this.attachShadow({ mode: 'open' });
         this.shadowRoot.appendChild(headerTemplate.content);
 
         this._hamburger = this.shadowRoot.getElementById("hamburger");
         this._mobileMenus = this.shadowRoot.getElementById("mobile-menus");
         this._mobileMenuPopoverClose = this.shadowRoot.getElementById("mobile-menu-close");
+
+        this._acne = this.shadowRoot.getElementById("acne");
+        this._sun = this.shadowRoot.getElementById("sun");
+        this._ezcema = this.shadowRoot.getElementById("ezcema");
+        this._psoriasis = this.shadowRoot.getElementById("psoriasis");
+        this._vitiligio = this.shadowRoot.getElementById("vitiligio");
     }
 
 
@@ -100,6 +107,56 @@ class Header extends HTMLElement {
 
         if(this._mobileMenuPopoverClose) {
             this._mobileMenuPopoverClose.addEventListener("click", (e) => this._onCloseClick(this._mobileMenus));
+        }
+
+        if(this._acne) {
+            this._acne.addEventListener("click", (e) => {
+                this._sun.style.borderBottom = "none";
+                this._ezcema.style.borderBottom = "none";
+                this._psoriasis.style.borderBottom = "none";
+                this._vitiligio.style.borderBottom = "none";
+                e.currentTarget.style.borderBottom = "4px solid #a67744";
+            });
+        }
+        
+        if(this._sun) {
+            this._sun.addEventListener("click", (e) => {
+                this._acne.style.borderBottom = "none";
+                this._ezcema.style.borderBottom = "none";
+                this._psoriasis.style.borderBottom = "none";
+                this._vitiligio.style.borderBottom = "none";
+                e.currentTarget.style.borderBottom = "4px solid #a67744";
+            });
+        }
+
+        if(this._ezcema) {
+            this._ezcema.addEventListener("click", (e) => {
+                this._acne.style.borderBottom = "none";
+                this._sun.style.borderBottom = "none";
+                this._psoriasis.style.borderBottom = "none";
+                this._vitiligio.style.borderBottom = "none";
+                e.currentTarget.style.borderBottom = "4px solid #a67744";
+            });
+        }
+
+        if(this._psoriasis) {
+            this._psoriasis.addEventListener("click", (e) => {
+                this._acne.style.borderBottom = "none";
+                this._ezcema.style.borderBottom = "none";
+                this._sun.style.borderBottom = "none";
+                this._vitiligio.style.borderBottom = "none";
+                e.currentTarget.style.borderBottom = "4px solid #a67744";
+            });
+        }
+
+        if(this._vitiligio) {
+            this._vitiligio.addEventListener("click", (e) => {
+                this._acne.style.borderBottom = "none";
+                this._ezcema.style.borderBottom = "none";
+                this._psoriasis.style.borderBottom = "none";
+                this._sun.style.borderBottom = "none";
+                e.currentTarget.style.borderBottom = "4px solid #a67744";
+            });
         }
     }
 

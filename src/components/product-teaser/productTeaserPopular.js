@@ -45,7 +45,7 @@ productTeaserTemplate.innerHTML = `
     <article class="product-teaser-container">
         <div class="aem-Grid aem-Grid--12 visible-lg">
             <div class="aem-GridColumn aem-GridColumn--default--6 headline-6-14pt">Most Popular</div>
-            <div class="aem-GridColumn aem-GridColumn--default--6 headline-6-14pt text-align-right">Shop all Products</div>
+            <div class="aem-GridColumn aem-GridColumn--default--6 headline-6-14pt text-align-right pointer-cursor">Shop all Products</div>
         </div>
         <div class="aem-Grid aem-Grid--12">
             ${popularProduct.map(element => 

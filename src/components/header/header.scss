@@ -32,6 +32,7 @@
             }
         }
     }
+
     .header-submenu {
         margin: var(--unnamed-margin-0) var(--unnamed-margin-auto);
         float: none !important;
@@ -39,7 +40,7 @@
     
     .text-align-center {
         @media (min-width: 768px) {
-            text-align: var(--unnamed-text-align-center);    
+            text-align: var(--unnamed-text-align-center);
         }        
     }
     
