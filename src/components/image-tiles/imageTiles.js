@@ -41,7 +41,7 @@ const ingredients = [
 
 imageTilesTemplate.innerHTML = `
     <link rel="stylesheet" href="./components/image-tiles/imageTiles.css">
-    <div class="image-tiles-container">
+    <article class="image-tiles-container">
         <div class="aem-Grid aem-Grid--12 section">
             <div class="aem-GridColumn aem-GridColumn--default--12 section-header">
                 <div class="headline-5-18pt">We use the best ingredients</div>
@@ -61,7 +61,7 @@ imageTilesTemplate.innerHTML = `
                 ).join('')}
         </div>
         </div>    
-    </div>
+    </article>
 `;
 
 

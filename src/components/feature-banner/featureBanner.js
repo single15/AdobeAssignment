@@ -4,7 +4,7 @@ const featureBannerTemplate = document.createElement('template');
 
 featureBannerTemplate.innerHTML = `
     <link rel="stylesheet" href="./components/feature-banner/featureBanner.css">
-    <div class="feature-banner-container">
+    <article class="feature-banner-container">
         <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 feature">
                 <div>
@@ -49,7 +49,7 @@ featureBannerTemplate.innerHTML = `
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 `;
 
 

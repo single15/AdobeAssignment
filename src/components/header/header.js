@@ -3,7 +3,7 @@ const headerTemplate = document.createElement('template');
 headerTemplate.innerHTML = `
     <link rel="stylesheet" href="./components/header/header.css">   
 
-    <div class="header body-1-—-14pt page-container">
+    <header class="header body-1-—-14pt page-container">
         <div class="aem-Grid aem-Grid--12 header-menus visible-lg">
             <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--5 aem-Grid aem-Grid--12 body-3-12pt">
                 <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--3">ABOUT</div>
@@ -78,7 +78,7 @@ headerTemplate.innerHTML = `
             <div class="headline-6-14pt">ABOUT</div>
             <div class="headline-6-14pt">CONSULTATION</div>
         </div>
-    </div>
+    </header>
 `;
 
 class Header extends HTMLElement {

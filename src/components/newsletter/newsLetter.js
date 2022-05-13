@@ -4,7 +4,7 @@ const newsLetterTemplate = document.createElement('template');
 
 newsLetterTemplate.innerHTML = `
     <link rel="stylesheet" href="./components/newsletter/newsLetter.css">
-    <div class="news-letter-container">
+    <article class="news-letter-container">
         <div class="aem-Grid aem-Grid--12 news-letter-section">
             <div class="aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--phone--12">
                 <div class="headline-4-28pt">Join the Sooth family</div>
@@ -19,7 +19,7 @@ newsLetterTemplate.innerHTML = `
                 </div>
             </div>
         </div>
-    </div>
+    </article>
 `;
 
 

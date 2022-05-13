@@ -4,7 +4,7 @@ const heroBannerTemplate = document.createElement('template');
 
 heroBannerTemplate.innerHTML = `
     <link rel="stylesheet" href="./components/hero-banner/heroBanner.css">
-    <div class="hero-banner-container">
+    <article class="hero-banner-container">
         <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--6 hero-banner-heading visible-lg">
                 <div class="new-item-tag body-3-12pt">New!</div>
@@ -33,7 +33,7 @@ heroBannerTemplate.innerHTML = `
                 </div>                
             </div>
         </div>
-    </div>
+    </article>
 `;
 
 

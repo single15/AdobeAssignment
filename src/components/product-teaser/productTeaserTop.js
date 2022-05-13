@@ -64,7 +64,7 @@ const popularProduct = [
 productTeaserTemplate.innerHTML = `
     <link rel="stylesheet" href="./components/product-teaser/productTeaserPopular.css">
 
-    <div class="product-teaser-container">
+    <article class="product-teaser-container">
         <div class="aem-Grid aem-Grid--12 visible-lg">
             <div class="aem-GridColumn aem-GridColumn--default--6  headline-6-14pt">Top Rated</div>
             <div class="aem-GridColumn aem-GridColumn--default--6  headline-6-14pt text-align-right">Shop all Products</div>
@@ -99,7 +99,7 @@ productTeaserTemplate.innerHTML = `
                 ).join('')
             }
         </div>
-    </div>
+    </article>
 `;
 
 

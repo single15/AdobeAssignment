@@ -4,9 +4,9 @@ const offerBannerTemplate = document.createElement('template');
 
 offerBannerTemplate.innerHTML = `
     <link rel="stylesheet" href="./components/offer-banner/offerBanner.css">
-    <div class="offer-banner-container">
+    <article class="offer-banner-container">
         <div class="offer-banner">Free Standard Shipping on orders over $99.99</div>
-    </div>
+    </article>
 `;
 
 

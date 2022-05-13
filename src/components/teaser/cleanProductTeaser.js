@@ -4,7 +4,7 @@ const teaserTemplate = document.createElement('template');
 
 teaserTemplate.innerHTML = `
     <link rel="stylesheet" href="./components/teaser/teaser.css">
-    <div class="teaser-container">
+    <article class="teaser-container">
         <div class="aem-Grid aem-Grid--12">
             <div class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 details-section">
                 <div class="text-container">
@@ -17,7 +17,7 @@ teaserTemplate.innerHTML = `
                 <img src="../src/assets/img/man-in-blue-top-2830332@3x.png" alt="Man in blue top" width="100%" height="70%" />
             </div>
         </div>
-    </div>
+    </article>
 `;
 
 

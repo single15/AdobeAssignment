@@ -5,7 +5,7 @@ const footerTemplate = document.createElement('template');
 footerTemplate.innerHTML = `
     <link rel="stylesheet" href="./components/footer/footer.css">
     
-    <div class="footer-container">
+    <footer class="footer-container">
         <div class="aem-Grid aem-Grid--12 subscribe-section">
             <div class="aem-GridColumn aem-GridColumn--default--6 visible-lg">
                 <div class="headline-—-48pt">sooth</div>
@@ -92,7 +92,7 @@ footerTemplate.innerHTML = `
                 </div>
             </div>
         </div>
-    </div>   
+    </footer>   
 `;
 
 
