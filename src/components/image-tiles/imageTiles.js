@@ -36,12 +36,6 @@ const ingredients = [
         label: 'Cacao',
         details: 'Lorem ipsum dolar et al',
         imgSrc: 'cacao-2'
-    },
-    {
-        id: 6,
-        label: '',
-        details: '',
-        imgSrc: ''
     }
 ]
 
