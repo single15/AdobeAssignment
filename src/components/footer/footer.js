@@ -3,6 +3,8 @@ const footerTemplate = document.createElement('template');
 
 
 footerTemplate.innerHTML = `
+    <link rel="stylesheet" href="../css/aem-grid-12.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="./components/footer/footer.css">
     
     <footer class="footer-container">
@@ -11,7 +13,8 @@ footerTemplate.innerHTML = `
                 <div class="headline-—-48pt">sooth</div>
                 <div class="body-1-—-14pt">Explore our innovative skincare products</div>
                 <div class="form-input-section">
-                    <input class="form-input" type="text" placeholder="Your email...." />
+                    <label for="subscribe"></label>
+                    <input class="form-input" name="subscribe" type="text" placeholder="Your email...." />
                     <button aria-label="Shop Product" class="btn-subscribe pointer-cursor">Subscribe</button>
                 </div>
             </div>
@@ -48,7 +51,8 @@ footerTemplate.innerHTML = `
                 <div class="headline-—-48pt">sooth</div>
                 <div class="body-1-—-14pt">Explore our innovative skincare products</div>
                 <div class="form-input-section">
-                    <input class="form-input" type="text" placeholder="Your email...." />
+                    <label for="subscribe"></label>
+                    <input class="form-input" name="subscribe" type="text" placeholder="Your email...." />
                     <button aria-label="Shop Product" class="btn-subscribe pointer-cursor">Subscribe</button>
                 </div>
             </div>
@@ -57,14 +61,14 @@ footerTemplate.innerHTML = `
             <div class="aem-Grid aem-Grid--12 section-heading">SOOTH ALL RIGHT RESERVED</div>
             <div class="aem-Grid aem-Grid--12">
                 <div class="aem-Grid aem-Grid--12 aem-GridColumn aem-GridColumn--default--10 aem-GridColumn--phone--12 aem-GridColumn--tablet--9">
-                    <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--4 aem-GridColumn--tablet--3">
-                        <a href="" tagert="_top">Privacy Policy</a>
+                    <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--4 aem-GridColumn--tablet--3 navigation-link">
+                        Privacy Policy
                     </div>
-                    <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--4 aem-GridColumn--tablet--3">
-                        <a href="" tagert="_top">Terms of Use</a>
+                    <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--4 aem-GridColumn--tablet--3 navigation-link">
+                        Terms of Use
                     </div>
-                    <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--4 aem-GridColumn--tablet--3">
-                        <a href="" tagert="_top">Contact Us</a>
+                    <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--phone--4 aem-GridColumn--tablet--3 navigation-link">
+                        Contact Us
                     </div>
                 </div>
 

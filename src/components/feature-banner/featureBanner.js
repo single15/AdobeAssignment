@@ -3,6 +3,8 @@ const featureBannerTemplate = document.createElement('template');
 
 
 featureBannerTemplate.innerHTML = `
+    <link rel="stylesheet" href="../css/aem-grid-12.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="./components/feature-banner/featureBanner.css">
     <article class="feature-banner-container">
         <div class="aem-Grid aem-Grid--12">
@@ -16,9 +18,7 @@ featureBannerTemplate.innerHTML = `
                     <span>We’re offering new</span>
                     <span>ways to shop.</span>
                 </div>
-                <div>
-                    <a href="" targer="_blank">Store locator</a>
-                </div>
+                <div class="navigation-link">Store locator</div>
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 feature">
                 <div>
@@ -30,9 +30,7 @@ featureBannerTemplate.innerHTML = `
                     <span>Buy online,</span>
                     <span>pickup in store</span>
                 </div>
-                <div>
-                    <a href="" targer="_blank">Learn more</a>
-                </div>
+                <div class="navigation-link">Learn more</div>
             </div>
             <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 feature">
                 <div>
@@ -44,9 +42,7 @@ featureBannerTemplate.innerHTML = `
                     <span>Curbside</span>
                     <span>pickup</span>
                 </div>
-                <div>
-                    <a href="" targer="_blank">Learn more</a>
-                </div>
+                <div class="navigation-link">Learn more</div>
             </div>
         </div>
     </article>

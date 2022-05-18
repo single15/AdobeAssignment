@@ -1,6 +1,3 @@
-@import '../../css/style.scss';
-
-
 @media (max-width: 767px) {
     .footer-container {
         padding: var(--unnamed-padding-88) var(--unnamed-padding-28) !important;
@@ -16,7 +13,7 @@
     }
 
     .visible-lg {
-        display: var(--unnamed-display-none) !important;
+        display: var(--unnamed-a-none) !important;
     }
 }
 
@@ -68,8 +65,14 @@
             padding-bottom: var(--unnamed-padding-16);
         }
 
-        a {
+        .navigation-link {
+            cursor: pointer;
             color: var(--white-ffffff);
+            font-size: var(--unnamed-font-size-14);
+
+            &:hover {
+                text-decoration: underline;
+            }
         }
 
 

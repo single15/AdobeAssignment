@@ -3,6 +3,8 @@ const heroBannerTemplate = document.createElement('template');
 
 
 heroBannerTemplate.innerHTML = `
+    <link rel="stylesheet" href="../css/aem-grid-12.css"/>
+    <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="./components/hero-banner/heroBanner.css">
     <article class="hero-banner-container">
         <div class="aem-Grid aem-Grid--12">

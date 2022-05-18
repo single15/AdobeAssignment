@@ -40,6 +40,8 @@ const ingredients = [
 ]
 
 imageTilesTemplate.innerHTML = `
+    <link rel="stylesheet" href="../css/aem-grid-12.css"/>
+    <link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="./components/image-tiles/imageTiles.css">
     <article class="image-tiles-container">
         <div class="aem-Grid aem-Grid--12 section">

@@ -61,7 +61,9 @@ const popularProduct = [
 ]
 
 
-productTeaserTemplate.innerHTML = `
+productTeaserTemplate.innerHTML = `    
+<link rel="stylesheet" href="../css/aem-grid-12.css">
+<link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="./components/product-teaser/productTeaserPopular.css">
 
     <article class="product-teaser-container">

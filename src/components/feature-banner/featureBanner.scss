@@ -1,5 +1,3 @@
-@import '../../css/style.scss';
-
 @media (max-width: 767px) {
     .feature-banner-container {
         padding: var(--unnamed-padding-56) !important;
@@ -26,10 +24,15 @@
             span {
                 display: var(--unnamed-display-block);
             }
-          
-            a {
-                color: var(--oxford-blue-354e57);
-                font-size: var(--unnamed-font-size-14);
+        }
+
+        .navigation-link {
+            cursor: pointer;
+            color: var(--oxford-blue-354e57);
+            font-size: var(--unnamed-font-size-14);
+
+            &:hover {
+                text-decoration: underline;
             }
         }
     }

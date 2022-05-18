@@ -3,6 +3,8 @@ const teaserTemplate = document.createElement('template');
 
 
 teaserTemplate.innerHTML = `
+<link rel="stylesheet" href="../css/aem-grid-12.css">
+<link rel="stylesheet" href="../src/css/style.css">
     <link rel="stylesheet" href="./components/teaser/teaser.css">
     <article class="teaser-container">
         <div class="aem-Grid aem-Grid--12">
