@@ -36,6 +36,12 @@ const ingredients = [
         label: 'Cacao',
         details: 'Lorem ipsum dolar et al',
         imgSrc: 'cacao-2'
+    },
+    {
+        id: 6,
+        label: '',
+        details: '',
+        imgSrc: ''
     }
 ]
 
@@ -47,11 +53,11 @@ imageTilesTemplate.innerHTML = `
                 <div class="headline-5-18pt">We use the best ingredients</div>
                 <div class="body-2-14pt">Explore our innovative skincare products</div>
             </div>
-            <div class="aem-Grid aem-Grid--12">
+            <div role="grid" aria-label="Ingredients" class="aem-Grid aem-Grid--12">
                 ${ingredients.map(element => 
-                    `<div key="${element.id}" class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 aem-GridColumn--tablet--4 image-tiles-section">
+                    `<div aria-label="Ingredients Details" key="${element.id}" class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 aem-GridColumn--tablet--4 image-tiles-section">
                         <div class="image-section">
-                            <img src="../src/assets/img/${element.imgSrc}.png"  alt="${element.label}" height="180px" width="100%" />
+                            <img aria-hidden="true"  src="../src/assets/img/${element.imgSrc}.png"  alt="Ingredients ${element.label}" height="180px" width="100%" />
                         </div>
                         <div class="product-details-section">
                             <div class="headline-6-14pt">${element.label}</div>
