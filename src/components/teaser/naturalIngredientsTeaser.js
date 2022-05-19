@@ -9,7 +9,7 @@ teaserTemplate.innerHTML = `
     <div class="teaser-container natural-ingredients-container">
         <div class="aem-Grid aem-Grid--12">
             <section class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 image-section">
-                <img aria-hidden="true"  src="../src/assets/img/hand-with-tatoo.png" alt="Hand with tatoo"  width="100%" />
+                <img aria-hidden="true"  src="../src/assets/img/hand-with-tatoo.png" alt="Hand with tatoo" style="min-width: 100%" />
             </section>    
             <section class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 details-section">
                 <div class="text-container">

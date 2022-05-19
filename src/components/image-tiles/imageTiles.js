@@ -49,9 +49,9 @@ imageTilesTemplate.innerHTML = `
                 <div class="headline-5-18pt">We use the best ingredients</div>
                 <div class="body-2-14pt">Explore our innovative skincare products</div>
             </div>
-            <div role="grid" aria-label="Ingredients" class="aem-Grid aem-Grid--12">
+            <div role="list" aria-label="Ingredients" class="aem-Grid aem-Grid--12">
                 ${ingredients.map(element => 
-                    `<div aria-label="Ingredients Details" key="${element.id}" class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 aem-GridColumn--tablet--4 image-tiles-section">
+                    `<div role="listitem" aria-label="Ingredients Details" key="${element.id}" class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 aem-GridColumn--tablet--4 image-tiles-section">
                         <div class="image-section">
                             <img aria-hidden="true"  src="../src/assets/img/${element.imgSrc}.png"  alt="Ingredients ${element.label}" height="180px" width="100%" />
                         </div>

@@ -71,9 +71,9 @@ productTeaserTemplate.innerHTML = `
             <div class="aem-GridColumn aem-GridColumn--default--6  headline-6-14pt">Top Rated</div>
             <div class="aem-GridColumn aem-GridColumn--default--6  headline-6-14pt text-align-right pointer-cursor">Shop all Products</div>
         </div>
-        <div class="aem-Grid aem-Grid--12">
+        <div role="list" class="aem-Grid aem-Grid--12">
             ${popularProduct.map(element => 
-                    `<div role="product-item" aria-label="Product Details" key="${element.id}" class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6 aem-GridColumn--tablet--4 product-section">
+                    `<div role="listitem" aria-label="Product Details" key="${element.id}" class="aem-GridColumn aem-GridColumn--default--3 aem-GridColumn--phone--6 aem-GridColumn--tablet--4 product-section">
                         <div class="image-section">
                             ${element.new ? '<div class="product-tag">New!</div>' : ''}
                             ${element.discountOff ? `<div class="product-tag offer">${element.discountOff} off</div>` : ''}
