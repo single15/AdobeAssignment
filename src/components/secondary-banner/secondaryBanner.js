@@ -3,6 +3,7 @@ const secondaryBannerTemplate = document.createElement('template');
 
 
 secondaryBannerTemplate.innerHTML = `
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./components/secondary-banner/secondaryBanner.css">
     <article class="secondary-banner-container">
         <div class="headline-4-28pt"> Solutions for all skin health</div>
