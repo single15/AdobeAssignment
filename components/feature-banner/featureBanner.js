@@ -4,7 +4,7 @@ const featureBannerTemplate = document.createElement('template');
 
 featureBannerTemplate.innerHTML = `
     <link rel="stylesheet" href="../css/aem-grid-12.css">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./components/feature-banner/featureBanner.css">
     <article class="feature-banner-container">
         <div class="aem-Grid aem-Grid--12">

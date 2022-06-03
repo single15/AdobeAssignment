@@ -4,12 +4,12 @@ const teaserTemplate = document.createElement('template');
 
 teaserTemplate.innerHTML = `
 <link rel="stylesheet" href="../css/aem-grid-12.css">
-<link rel="stylesheet" href="../src/css/style.css">
+<link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./components/teaser/teaser.css">
     <div class="teaser-container natural-ingredients-container">
         <div class="aem-Grid aem-Grid--12">
             <section class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 image-section">
-                <img aria-hidden="true"  src="../src/assets/img/hand-with-tatoo.png" alt="Hand with tatoo" style="min-width: 100%" />
+                <img aria-hidden="true"  src="../assets/img/hand-with-tatoo.png" alt="Hand with tatoo" style="min-width: 100%" />
             </section>    
             <section class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 details-section">
                 <div class="text-container">

@@ -2,33 +2,11 @@ const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
     <link rel="stylesheet" href="../css/aem-grid-12.css">
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./components/header/header.css">
 
     <header class="header body-1-—-14pt page-container">
-        <div class="aem-Grid aem-Grid--12 header-menus visible-lg">
-            <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--5 aem-Grid aem-Grid--12 body-3-12pt">
-                <div class="aem-GridColumn aem-GridColumn--default--2 aem-GridColumn--tablet--3 navigator-link">ABOUT</div>
-                <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--3 navigator-link">CONSULTATION</div>
-            </div>
-            <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--2 headline-3-32pt text-align-center">
-                sooth
-            </div>
-            <div class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--tablet--5 cart-login-menu body-3-12pt">
-                <div>
-                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12px" height="12px">
-                        <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/>
-                    </svg>
-                </div>
-                <div class="pointer-cursor">
-                    CART
-                </div>
-                <div class="pointer-cursor">
-                    LOGIN
-                </div>
-            </div>
-        </div>
-        <div class="aem-Grid aem-Grid--12 header-menus visible-xs">
+        <div class="aem-Grid aem-Grid--12 header-menus">
             <div class="aem-GridColumn aem-GridColumn--phone--10 headline-3-32pt text-align-center">
                 <span id="hamburger">
                     <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20px" height="18px" fill="#354e57">
@@ -44,16 +22,6 @@ headerTemplate.innerHTML = `
                     </svg>&nbsp; &nbsp;CART
                 </div>
             </div> 
-        </div>
-
-        <div class="aem-Grid aem-Grid--12 visible-lg">
-            <div class="header-submenu aem-Grid aem-Grid--10 aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--tablet--10">
-                <div id="acne" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Acne</div>
-                <div id="sun" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Sun</div>
-                <div id="ezcema" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Ezcema</div>
-                <div id="psoriasis" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Psoriasis</div>
-                <div id="vitiligio" class="aem-GridColumn aem-GridColumn--default--2 text-align-center navigator-link">Vitiligio</div>
-            </div>
         </div>
     </div>
     <div id="mobile-menus" class="mobile-menus-container"> 

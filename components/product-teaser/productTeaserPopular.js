@@ -4,72 +4,50 @@ const productTeaserTemplate = document.createElement('template');
 const popularProduct = [
     {
         id: 1,
-        label: 'Psoriasis Cream',
+        label: 'Acne Cream',
         details: 'All Natural Ingredients.',
         price: '$24.99',
-        imgSrc: 'psoriasis_treatment@2x'
+        new: true,
+        imgSrc: 'Cream1.png'
     },
     {
         id: 2,
-        label: 'Ezcema Cream',
-        details: 'All Natural Ingredients.',
-        price: '$24.99',
-        imgSrc: 'ezcema@2x'
-    },
-    {
-        id: 3,
-        label: 'Sunburn Ointment',
-        details: 'All Natural Ingredients.',
-        price: '$24.99',
-        imgSrc: 'suburn1@3x'
-    },
-    {
-        id: 4,
-        label: 'Vitiligio Balm',
-        details: 'All Natural Ingredients.',
-        price: '$24.99',
-        imgSrc: 'vitiligio_Balm@2x'
-    },
-    {
-        id: 5,
         label: 'Vitiligio Solution',
         details: 'All Natural Ingredients.',
         price: '$24.99',
-        imgSrc: 'vitiligio@2x'
+        new: true,
+        imgSrc: 'vitiligio-1.png'
     },
     {
-        id: 6,
-        label: 'Acne Cream',
+        id: 3,
+        label: 'Ezcema Cream',
         details: 'All Natural Ingredients.',
         price: '$24.99',
-        imgSrc: 'Cream1@2x'
+        new: false,
+        imgSrc: 'ezcema.png'
     },
     {
-        id: 7,
-        label: 'Acne Cream',
+        id: 4,
+        label: 'Sunburn Ointment',
         details: 'All Natural Ingredients.',
         price: '$24.99',
-        imgSrc: 'acne_Cream@2x'
-    },
-    {
-        id: 8,
-        label: 'Ezcema Oil',
-        details: 'All Natural Ingredients.',
-        price: '$24.99',
-        imgSrc: 'ezema_dropper@2x'
+        discountOff:  '15%',
+        discountPrice: '$18.99',
+        new: false,
+        imgSrc: 'suburn1.png'
     }
 ]
 
 
-productTeaserTemplate.innerHTML = `    
+productTeaserTemplate.innerHTML = `
 <link rel="stylesheet" href="../css/aem-grid-12.css">
-<link rel="stylesheet" href="../src/css/style.css">
+<link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./components/product-teaser/productTeaserPopular.css">
 
     <article class="product-teaser-container">
         <div class="aem-Grid aem-Grid--12 visible-lg">
-            <div class="aem-GridColumn aem-GridColumn--default--6  headline-6-14pt">Top Rated</div>
-            <div class="aem-GridColumn aem-GridColumn--default--6  headline-6-14pt text-align-right pointer-cursor">Shop all Products</div>
+            <div class="aem-GridColumn aem-GridColumn--default--6 headline-6-14pt">Most Popular</div>
+            <div class="aem-GridColumn aem-GridColumn--default--6 headline-6-14pt text-align-right pointer-cursor">Shop all Products</div>
         </div>
         <div role="list" class="aem-Grid aem-Grid--12">
             ${popularProduct.map(element => 
@@ -77,7 +55,7 @@ productTeaserTemplate.innerHTML = `
                         <div class="image-section">
                             ${element.new ? '<div class="product-tag">New!</div>' : ''}
                             ${element.discountOff ? `<div class="product-tag offer">${element.discountOff} off</div>` : ''}
-                            <img aria-hidden="true"  src="../src/assets/img/${element.imgSrc}.png" alt="${element.label}" height="300px" width="100%" />
+                            <img aria-hidden="true"  src="../assets/img/${element.imgSrc}"  alt="${element.label}" height="350px" width="100%" />
                         </div>
                         <div class="product-details-section">
                             <div class="headline-6-14pt">${element.label}</div>
@@ -106,7 +84,7 @@ productTeaserTemplate.innerHTML = `
 
 
 
-class ProductTeaserTopRated extends HTMLElement {
+class ProductTeaserPopular extends HTMLElement {
     constructor() {
         super();
     }
@@ -119,4 +97,4 @@ class ProductTeaserTopRated extends HTMLElement {
 }
 
 
-export default ProductTeaserTopRated;
+export default ProductTeaserPopular;

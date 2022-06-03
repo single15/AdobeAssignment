@@ -41,7 +41,7 @@ const ingredients = [
 
 imageTilesTemplate.innerHTML = `
     <link rel="stylesheet" href="../css/aem-grid-12.css"/>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./components/image-tiles/imageTiles.css">
     <article class="image-tiles-container">
         <div class="aem-Grid aem-Grid--12 section">
@@ -53,7 +53,7 @@ imageTilesTemplate.innerHTML = `
                 ${ingredients.map(element => 
                     `<div role="listitem" aria-label="Ingredients Details" key="${element.id}" class="aem-GridColumn aem-GridColumn--default--4 aem-GridColumn--phone--12 aem-GridColumn--tablet--4 image-tiles-section">
                         <div class="image-section">
-                            <img aria-hidden="true"  src="../src/assets/img/${element.imgSrc}.png"  alt="Ingredients ${element.label}" height="180px" width="100%" />
+                            <img aria-hidden="true"  src="../assets/img/${element.imgSrc}.png"  alt="Ingredients ${element.label}" height="180px" width="100%" />
                         </div>
                         <div class="product-details-section">
                             <div class="headline-6-14pt">${element.label}</div>
