@@ -1,5 +1,6 @@
 # AdobeAssignment
 Ecomm website for beauty products by using html5, css3 and ES6 technologies. 
+Website is published at https://single15.github.io/AdobeAssignment/
 
 
 # Getting Started
