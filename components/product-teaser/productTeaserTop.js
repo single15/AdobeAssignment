@@ -62,8 +62,7 @@ const popularProduct = [
 
 
 productTeaserTemplate.innerHTML = `    
-<link rel="stylesheet" href="../css/aem-grid-12.css">
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./components/product-teaser/productTeaserPopular.css">
 
     <article class="product-teaser-container">
@@ -77,7 +76,7 @@ productTeaserTemplate.innerHTML = `
                         <div class="image-section">
                             ${element.new ? '<div class="product-tag">New!</div>' : ''}
                             ${element.discountOff ? `<div class="product-tag offer">${element.discountOff} off</div>` : ''}
-                            <img aria-hidden="true"  src="../assets/img/${element.imgSrc}.png" alt="${element.label}" height="300px" width="100%" />
+                            <img aria-hidden="true"  src="assets/img/${element.imgSrc}.png" alt="${element.label}" height="300px" width="100%" />
                         </div>
                         <div class="product-details-section">
                             <div class="headline-6-14pt">${element.label}</div>

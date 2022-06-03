@@ -1,8 +1,7 @@
 const headerTemplate = document.createElement('template');
 
 headerTemplate.innerHTML = `
-    <link rel="stylesheet" href="../css/aem-grid-12.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./components/header/header.css">
 
     <header class="header body-1-—-14pt page-container">

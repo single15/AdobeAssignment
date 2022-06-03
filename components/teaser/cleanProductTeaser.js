@@ -3,8 +3,7 @@ const teaserTemplate = document.createElement('template');
 
 
 teaserTemplate.innerHTML = `
-<link rel="stylesheet" href="../css/aem-grid-12.css">
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./components/teaser/teaser.css">
     <article class="teaser-container">
         <div class="aem-Grid aem-Grid--12">
@@ -16,7 +15,7 @@ teaserTemplate.innerHTML = `
                 </div>
             </section>
             <section class="aem-GridColumn aem-GridColumn--default--6 aem-GridColumn--phone--12 image-section">
-                <img aria-hidden="true"  src="../assets/img/man-in-blue-top-2830332@3x.png" alt="Man in blue top" width="100%" height="70%" />
+                <img aria-hidden="true"  src="assets/img/man-in-blue-top-2830332@3x.png" alt="Man in blue top" width="100%" height="70%" />
             </section>
         </div>
     </article>

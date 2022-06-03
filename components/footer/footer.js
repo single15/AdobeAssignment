@@ -3,8 +3,7 @@ const footerTemplate = document.createElement('template');
 
 
 footerTemplate.innerHTML = `
-    <link rel="stylesheet" href="../css/aem-grid-12.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="./components/footer/footer.css">
     
     <footer class="footer-container">
